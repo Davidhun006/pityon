@@ -1,0 +1,12 @@
+nev= input("Kérem adja meg autoja nevét ")
+marka= input("Kérem adja meg a márkájat ")
+vegsebesseg= int(input("Kérem adja meg a végsebességet "))
+orszag= input("Hol készül a " +nev+"?")
+
+mondat1= (orszag)+" vidékein készül a "+(nev)+ ", ami "+str(vegsebesseg)+ " km/h-val közlekedő "+(marka)
+print(mondat1)
+mondat2= "{} vidékein készül a {} {} ami {} km/h végsebességre képes.".format(orszag,nev,marka,vegsebesseg)
+print(mondat2)
+mondat3= "{o} vidékein készül a {n} {m} ami {v} km/h végsebességre képes.".format(o=orszag,n=nev,m=marka,v=vegsebesseg)
+print(mondat3)
+print(f'{orszag=},{nev=},{vegsebesseg=} ')
